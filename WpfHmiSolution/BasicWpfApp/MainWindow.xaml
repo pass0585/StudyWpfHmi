@@ -1,0 +1,24 @@
+﻿<Window 
+    x:Class="BasicWpfApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:BasicWpfApp"
+    mc:Ignorable="d"
+    Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--<Button Content="Button" HorizontalAlignment="Left" Margin="168,109,0,0" VerticalAlignment="Top" Width="75"/>-->
+        <!--<Button Name ="BtnOk" Content="Ok" 
+                Margin="361,196" 
+                Click="BtnOk_Click"/>-->
+        <Rectangle Width="200" Height="200" Fill="Blue" Stroke="Black" StrokeThickness="10"></Rectangle>
+        <Ellipse Width="100" Height="100" Fill="Red" Stroke="Black" StrokeThickness="5"></Ellipse>
+        <Path Margin="58.815,60.309,578.127,322.63" Stretch="Fill" />
+        <Path Margin="58.815,160,578.127,222.939" Stretch="Fill" Fill="Green">
+            <Path.Data>
+                <RectangleGeometry Rect="10, 120, 30, 30"/>
+            </Path.Data>
+        </Path>
+    </Grid>
+</Window>

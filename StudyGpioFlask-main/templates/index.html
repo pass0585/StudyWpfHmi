@@ -1,0 +1,31 @@
+<html>
+	<head> 
+	<title>TANK CONTROLLER</title>	
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	</head> 
+	<body>
+		<h1>TANK Control</h1>
+		<hr>
+
+		<div style="padding-left:20px;">
+			<h3>ON/OFF</h3>
+                <p >
+                    <b>TANK Power: {% if led_states['green']==1 %} 켜짐 
+                                    {% elif led_states['green']==0 %}꺼짐
+                                    {% endif %}
+                    </b>	
+                        
+                    <a href="{{ url_for('led_switch', color='green', state=1) }}"><input type="button" value="켜기" ></a>
+                    <a href="{{ url_for('led_switch', color='green', state=0) }}"> <input type="button" value="끄기"> </a>
+                </p>
+				<p >
+					<b>비상 : {% if led_states['red']==1 %} 켜짐 
+									{% elif led_states['red']==0 %}꺼짐
+									{% endif %}
+					</b>	
+					<a href="{{ url_for('led_switch', color='red', state=1) }}"><input type="button" value="켜기" ></a>
+					<a href="{{ url_for('led_switch', color='red', state=0) }}"> <input type="button" value="끄기"> </a>
+				</p>
+		</div>
+	</body>
+</html>
